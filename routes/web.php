@@ -22,7 +22,7 @@ Auth::routes();
 Route::middleware('auth')
     ->namespace('admin')
     ->name('admin.')
-    ->namespace('admin')
+    ->namespace('Admin')
     ->group( function (){
         Route::get('/', 'HomeController@index')->name('home');
     }
